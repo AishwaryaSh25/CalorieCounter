@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.caloriecounter.service.GeminiServiceTest" time="6.963" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/paras.kumar/Documents/AI agent/target/test-classes:/Users/paras.kumar/Documents/AI agent/target/classes:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/paras.kumar/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/paras.kumar/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/paras.kumar/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/paras.kumar/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/paras.kumar/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/paras.kumar/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/paras.kumar/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/paras.kumar/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/paras.kumar/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/paras.kumar/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/paras.kumar/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.2.0/spring-boot-starter-thymeleaf-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.2.RELEASE/thymeleaf-spring6-3.1.2.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.2.0/spring-boot-starter-webflux-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.2.0/spring-boot-starter-reactor-netty-3.2.0.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.13/reactor-netty-http-1.1.13.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-http/4.1.101.Final/netty-codec-http-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-common/4.1.101.Final/netty-common-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-buffer/4.1.101.Final/netty-buffer-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport/4.1.101.Final/netty-transport-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec/4.1.101.Final/netty-codec-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-handler/4.1.101.Final/netty-handler-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-http2/4.1.101.Final/netty-codec-http2-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns/4.1.101.Final/netty-resolver-dns-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver/4.1.101.Final/netty-resolver-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-dns/4.1.101.Final/netty-codec-dns-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.101.Final/netty-resolver-dns-native-macos-4.1.101.Final-osx-x86_64.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.101.Final/netty-resolver-dns-classes-macos-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.101.Final/netty-transport-native-epoll-4.1.101.Final-linux-x86_64.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.101.Final/netty-transport-native-unix-common-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.101.Final/netty-transport-classes-epoll-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.13/reactor-netty-core-1.1.13.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-handler-proxy/4.1.101.Final/netty-handler-proxy-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-socks/4.1.101.Final/netty-codec-socks-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-webflux/6.1.1/spring-webflux-6.1.1.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/reactor-core/3.6.0/reactor-core-3.6.0.jar:/Users/paras.kumar/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/paras.kumar/.m2/repository/org/springframework/session/spring-session-core/3.2.0/spring-session-core-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/paras.kumar/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/paras.kumar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/paras.kumar/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/paras.kumar/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/paras.kumar/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/paras.kumar/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/paras.kumar/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/paras.kumar/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/paras.kumar/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/paras.kumar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/paras.kumar/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/paras.kumar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/paras.kumar/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/paras.kumar/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/paras.kumar/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/paras.kumar/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/paras.kumar/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/paras.kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/paras.kumar/Library/Java/JavaVirtualMachines/graalvm-jdk-21.0.6/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/paras.kumar/Documents/AI agent/target/surefire/surefirebooter-20250915163259892_3.jar /Users/paras.kumar/Documents/AI agent/target/surefire 2025-09-15T16-32-59_822-jvmRun1 surefire-20250915163259892_1tmp surefire_0-20250915163259892_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/paras.kumar/Documents/AI agent/target/test-classes:/Users/paras.kumar/Documents/AI agent/target/classes:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/paras.kumar/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/paras.kumar/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/paras.kumar/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/paras.kumar/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/paras.kumar/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/paras.kumar/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/paras.kumar/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/paras.kumar/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/paras.kumar/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/paras.kumar/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/paras.kumar/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/paras.kumar/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.2.0/spring-boot-starter-thymeleaf-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.2.RELEASE/thymeleaf-spring6-3.1.2.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/paras.kumar/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/paras.kumar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.2.0/spring-boot-starter-webflux-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.2.0/spring-boot-starter-reactor-netty-3.2.0.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.13/reactor-netty-http-1.1.13.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-http/4.1.101.Final/netty-codec-http-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-common/4.1.101.Final/netty-common-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-buffer/4.1.101.Final/netty-buffer-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport/4.1.101.Final/netty-transport-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec/4.1.101.Final/netty-codec-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-handler/4.1.101.Final/netty-handler-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-http2/4.1.101.Final/netty-codec-http2-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns/4.1.101.Final/netty-resolver-dns-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver/4.1.101.Final/netty-resolver-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-dns/4.1.101.Final/netty-codec-dns-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.101.Final/netty-resolver-dns-native-macos-4.1.101.Final-osx-x86_64.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.101.Final/netty-resolver-dns-classes-macos-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.101.Final/netty-transport-native-epoll-4.1.101.Final-linux-x86_64.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.101.Final/netty-transport-native-unix-common-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.101.Final/netty-transport-classes-epoll-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.13/reactor-netty-core-1.1.13.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-handler-proxy/4.1.101.Final/netty-handler-proxy-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/io/netty/netty-codec-socks/4.1.101.Final/netty-codec-socks-4.1.101.Final.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-webflux/6.1.1/spring-webflux-6.1.1.jar:/Users/paras.kumar/.m2/repository/io/projectreactor/reactor-core/3.6.0/reactor-core-3.6.0.jar:/Users/paras.kumar/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/paras.kumar/.m2/repository/org/springframework/session/spring-session-core/3.2.0/spring-session-core-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/paras.kumar/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/paras.kumar/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/paras.kumar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/paras.kumar/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/paras.kumar/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/paras.kumar/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/paras.kumar/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/paras.kumar/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/paras.kumar/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/paras.kumar/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/paras.kumar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/paras.kumar/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/paras.kumar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/paras.kumar/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/paras.kumar/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/paras.kumar/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/paras.kumar/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/paras.kumar/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/paras.kumar/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/paras.kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/paras.kumar/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/paras.kumar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Users/paras.kumar/Library/Java/JavaVirtualMachines/graalvm-jdk-21.0.6/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/paras.kumar/Documents/AI agent"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="jdk.internal.vm.ci.enabled" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/paras.kumar/Documents/AI agent/target/surefire/surefirebooter-20250915163259892_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-jvmci-23.1-b55"/>
+    <property name="user.name" value="paras.kumar"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.6.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Oracle GraalVM 21.0.6+8.1"/>
+    <property name="localRepository" value="/Users/paras.kumar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/cl/yvghdr4157z2vy454qf0bb3r0000gn/T/"/>
+    <property name="idea.version" value="2024.3.5"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="/Users/paras.kumar/Documents/AI agent"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="46216"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/paras.kumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-jvmci-23.1-b55"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testGeminiAPIConnection" classname="com.caloriecounter.service.GeminiServiceTest" time="4.216">
+    <system-out><![CDATA[2025-09-15T16:33:03.700+05:30  INFO 46216 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.caloriecounter.service.GeminiServiceTest]: GeminiServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-15T16:33:03.715+05:30  INFO 46216 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.caloriecounter.CalorieCounterApplication for test class com.caloriecounter.service.GeminiServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-09-15T16:33:03.743+05:30  INFO 46216 --- [           main] c.c.service.GeminiServiceTest            : Starting GeminiServiceTest using Java 21.0.6 with PID 46216 (started by paras.kumar in /Users/paras.kumar/Documents/AI agent)
+2025-09-15T16:33:03.743+05:30 DEBUG 46216 --- [           main] c.c.service.GeminiServiceTest            : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-09-15T16:33:03.743+05:30  INFO 46216 --- [           main] c.c.service.GeminiServiceTest            : No active profile set, falling back to 1 default profile: "default"
+2025-09-15T16:33:03.745+05:30 DEBUG 46216 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@77ce8bc5
+2025-09-15T16:33:04.202+05:30  INFO 46216 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-15T16:33:04.224+05:30 DEBUG 46216 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 25 mappings in 'requestMappingHandlerMapping'
+2025-09-15T16:33:04.233+05:30 DEBUG 46216 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-15T16:33:04.238+05:30 DEBUG 46216 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-15T16:33:04.241+05:30 DEBUG 46216 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-15T16:33:04.277+05:30  INFO 46216 --- [           main] c.c.service.GeminiServiceTest            : Started GeminiServiceTest in 0.554 seconds (process running for 4.323)
+Food database initialized with 15 items
+Testing Gemini API connection...
+DEBUG: Gemini API key present: true
+DEBUG: Calling Gemini API (attempt 1/3)...
+DEBUG: Gemini request body: {contents=[{parts=[{text=You are a professional nutritionist AI. Analyze this food for the user and provide personalized recommendations.
+
+USER PROFILE:
+- Name: Test User
+- Age: 30 years
+- Gender: MALE
+- Weight: 70.0 kg
+- Height: 175.0 cm
+- Activity Level: Moderate exercise/sports 3-5 days/week
+- Daily Calorie Needs: 2556 calories
+- Health Conditions: None
+
+FOOD TO ANALYZE:
+- Food: Chicken Breast
+- Portion Size: 100.0 grams
+- Calories per 100g: 165.0
+- Protein per 100g: 31.0g
+- Carbs per 100g: 0.0g
+- Fat per 100g: 3.6g
+
+PLEASE PROVIDE YOUR ANALYSIS IN THIS EXACT FORMAT:
+SUITABILITY: [EXCELLENT/GOOD/MODERATE/POOR/AVOID]
+RECOMMENDED_PORTION: [number in grams]
+BENEFITS: [list benefits separated by semicolons]
+WARNINGS: [list warnings separated by semicolons, or 'None' if no warnings]
+REASONING: [detailed explanation of your recommendation considering the user's profile]
+}]}]}
+2025-09-15T16:33:04.332+05:30 DEBUG 46216 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [6d87253e] HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+2025-09-15T16:33:05.182+05:30 DEBUG 46216 --- [ctor-http-nio-2] org.springframework.web.HttpLogging      : [6d87253e] Encoding [{contents=[{parts=[{text=You are a professional nutritionist AI. Analyze this food for the user and  (truncated)...]
+2025-09-15T16:33:08.468+05:30 DEBUG 46216 --- [ctor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6d87253e] [db83e4af-1] Response 200 OK
+2025-09-15T16:33:08.486+05:30 DEBUG 46216 --- [ctor-http-nio-2] org.springframework.web.HttpLogging      : [6d87253e] [db83e4af-1] Decoded "{<EOL>  "candidates": [<EOL>    {<EOL>      "content": {<EOL>        "parts": [<EOL>          {<EOL>            "text": "SUI (truncated)..."
+DEBUG: Gemini API call successful, response length: 1147
+✅ Gemini API connection successful!
+Response length: 1147
+First 200 characters: SUITABILITY: EXCELLENT
+RECOMMENDED_PORTION: 150 grams
+BENEFITS: High in protein, crucial for muscle repair and growth, especially important given your activity level;Low in carbohydrates, beneficial f
+]]></system-out>
+  </testcase>
+  <testcase name="testGeminiResponseFormat" classname="com.caloriecounter.service.GeminiServiceTest" time="2.163">
+    <system-out><![CDATA[Testing Gemini response format...
+DEBUG: Gemini API key present: true
+DEBUG: Calling Gemini API (attempt 1/3)...
+DEBUG: Gemini request body: {contents=[{parts=[{text=You are a professional nutritionist AI. Analyze this food for the user and provide personalized recommendations.
+
+USER PROFILE:
+- Name: Test User
+- Age: 30 years
+- Gender: MALE
+- Weight: 70.0 kg
+- Height: 175.0 cm
+- Activity Level: Moderate exercise/sports 3-5 days/week
+- Daily Calorie Needs: 2556 calories
+- Health Conditions: None
+
+FOOD TO ANALYZE:
+- Food: Chicken Breast
+- Portion Size: 100.0 grams
+- Calories per 100g: 165.0
+- Protein per 100g: 31.0g
+- Carbs per 100g: 0.0g
+- Fat per 100g: 3.6g
+
+PLEASE PROVIDE YOUR ANALYSIS IN THIS EXACT FORMAT:
+SUITABILITY: [EXCELLENT/GOOD/MODERATE/POOR/AVOID]
+RECOMMENDED_PORTION: [number in grams]
+BENEFITS: [list benefits separated by semicolons]
+WARNINGS: [list warnings separated by semicolons, or 'None' if no warnings]
+REASONING: [detailed explanation of your recommendation considering the user's profile]
+}]}]}
+2025-09-15T16:33:08.499+05:30 DEBUG 46216 --- [           main] o.s.w.r.f.client.ExchangeFunctions       : [bc88295] HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+2025-09-15T16:33:08.500+05:30 DEBUG 46216 --- [ctor-http-nio-2] org.springframework.web.HttpLogging      : [bc88295] Encoding [{contents=[{parts=[{text=You are a professional nutritionist AI. Analyze this food for the user and  (truncated)...]
+2025-09-15T16:33:10.656+05:30 DEBUG 46216 --- [ctor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [bc88295] [db83e4af-2] Response 200 OK
+2025-09-15T16:33:10.658+05:30 DEBUG 46216 --- [ctor-http-nio-2] org.springframework.web.HttpLogging      : [bc88295] [db83e4af-2] Decoded "{<EOL>  "candidates": [<EOL>    {<EOL>      "content": {<EOL>        "parts": [<EOL>          {<EOL>            "text": "SUI (truncated)..."
+DEBUG: Gemini API call successful, response length: 1020
+Full Gemini response:
+==================================================
+SUITABILITY: EXCELLENT
+RECOMMENDED_PORTION: 150 grams
+BENEFITS: Excellent source of lean protein;Supports muscle growth and repair;Contributes to satiety and weight management;Low in carbohydrates;Relatively low in fat
+WARNINGS: None
+REASONING: Chicken breast is an excellent food choice for Test User given his active lifestyle and daily calorie needs. A 100g serving provides a significant amount of protein (31g) with relatively few calories (165kcal) and minimal fat and carbohydrates. Increasing the portion to 150g provides 46.5g of protein and 247.5 calories. This helps Test User meet his protein requirements for muscle recovery and growth following exercise. This amount still leaves plenty of room within his 2556 daily calorie target for a variety of other nutrient-rich foods. The high protein content will also contribute to feelings of fullness, which can assist with weight management if desired. There are no specific health concerns that contraindicate the consumption of chicken breast in moderation.
+
+==================================================
+]]></system-out>
+  </testcase>
+</testsuite>

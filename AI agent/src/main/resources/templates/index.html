@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Calorie Counter AI Agent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #28a745 !important;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem !important;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e9ecef;
+            color: #28a745 !important;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
+            margin: 0.25rem;
+            padding: 0.5rem 1.5rem;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-utensils"></i> Calorie Counter AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/analyze">
+                            <i class="fas fa-search"></i> Analyze Food
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">
+                            <i class="fas fa-user-plus"></i> Sign Up
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">Calorie Counter AI Agent</h1>
+                        <p class="lead mb-4">
+                            Analyze <strong>ANY food</strong> with Google Gemini AI! Enter any food name - from "homemade pasta"
+                            to "street tacos" - and get personalized recommendations based on your health profile.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="/register" class="btn btn-light btn-lg">
+                                <i class="fas fa-user-plus"></i> Get Started
+                            </a>
+                            <a href="/analyze" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-search"></i> Analyze Food
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <i class="fas fa-brain" style="font-size: 8rem; opacity: 0.8;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold">How It Works</h2>
+                        <p class="lead text-muted">
+                            Our Google Gemini AI analyzes unlimited food variety in three simple steps
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 text-center p-4">
+                            <div class="card-body">
+                                <i class="fas fa-user-cog fa-3x text-primary mb-3"></i>
+                                <h4>1. Create Your Profile</h4>
+                                <p class="text-muted">
+                                    Enter your health information with pre-filled defaults for quick testing.
+                                    Include weight, height, age, activity level, and health conditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 text-center p-4">
+                            <div class="card-body">
+                                <i class="fas fa-utensils fa-3x text-success mb-3"></i>
+                                <h4>2. Enter ANY Food</h4>
+                                <p class="text-muted">
+                                    Type any food name - "homemade curry", "sushi roll", "chocolate cake".
+                                    No restrictions or database limitations!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 text-center p-4">
+                            <div class="card-body">
+                                <i class="fas fa-robot fa-3x text-warning mb-3"></i>
+                                <h4>3. Get Gemini Analysis</h4>
+                                <p class="text-muted">
+                                    Receive instant AI-powered recommendations with portion sizes,
+                                    health warnings, and personalized reasoning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="display-6 fw-bold mb-4">Why Choose Our AI Agent?</h2>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Personalized Analysis</h5>
+                                        <p class="text-muted">Recommendations tailored to your specific health conditions and goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Comprehensive Food Database</h5>
+                                        <p class="text-muted">Access to detailed nutritional information for thousands of foods.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Health Condition Awareness</h5>
+                                        <p class="text-muted">Special considerations for diabetes, hypertension, heart disease, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Instant Results</h5>
+                                        <p class="text-muted">Get immediate feedback on food choices with detailed explanations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <i class="fas fa-heart text-danger" style="font-size: 6rem; opacity: 0.8;"></i>
+                        <h3 class="mt-3">Your Health, Our Priority</h3>
+                        <p class="text-muted">Making informed dietary decisions has never been easier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-6 fw-bold mb-4">Ready to Start Your Health Journey?</h2>
+                        <p class="lead mb-4">
+                            Join thousands of users who are making smarter food choices with our AI-powered recommendations.
+                        </p>
+                        <a href="/register" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-rocket"></i> Start Now
+                        </a>
+                        <a href="/about" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Calorie Counter AI Agent</h5>
+                    <p class="text-muted">Your personal AI-powered nutrition assistant</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted">Built with Spring Boot & Gemini AI</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
